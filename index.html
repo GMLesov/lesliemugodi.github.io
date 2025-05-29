@@ -1,0 +1,100 @@
+# Create a simple HTML template for Leslie Mugodi's personal website
+personal_website_html = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leslie Mugodi | MIET | ICT Specialist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #00274d;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        h1, h2 {
+            color: #00274d;
+        }
+        footer {
+            background: #00274d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Leslie Mugodi, MIET</h1>
+    <p>Telecommunications & ICT Specialist | Data Analytics | MSc IT Management</p>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>I am a certified MIET professional with a background in Telecommunications and a Master's in Information Technology Management. I specialize in network systems, ICT infrastructure, and data analytics.</p>
+</section>
+
+<section>
+    <h2>Projects</h2>
+    <ul>
+        <li><strong>Smart Network Monitoring Dashboard:</strong> A Python and Power BI-based solution to monitor and analyze network infrastructure. [<a href="#">View on GitHub</a>]</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Certifications</h2>
+    <ul>
+        <li>Member, Institution of Engineering and Technology (MIET) - ID: 1122018677</li>
+        <li>CCNA (Cisco Certified Network Associate)</li>
+        <li>Azure Fundamentals (AZ-900)</li>
+        <li>Data Analytics (Python, Power BI)</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Download My CV</h2>
+    <p><a href="#">Click here to download PDF</a></p>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email: lesliemugodi@example.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/lesliemugodi" target="_blank">linkedin.com/in/lesliemugodi</a></p>
+</section>
+
+<footer>
+    <p>© 2025 Leslie Mugodi | All rights reserved</p>
+</footer>
+
+</body>
+</html>
+"""
+
+# Save this to a file
+file_path = "/mnt/data/leslie_mugodi_website.html"
+with open(file_path, "w") as file:
+    file.write(personal_website_html)
+
+file_path
