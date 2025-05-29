@@ -17,7 +17,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: #111;
+            background: #fff;
             padding: 20px 50px;
         }
         nav img.logo {
@@ -30,10 +30,33 @@
         nav ul li {
             margin-left: 20px;
         }
-        nav ul li a {
+        
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 20px 50px;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+nav ul li a.active,
+nav ul li a:hover {
+    border-bottom: 2px solid #e91e63;
+}
+
             color: white;
             text-decoration: none;
             font-weight: 500;
+            padding-bottom: 4px;
+        }
+        nav ul li a.active,
+        nav ul li a:hover {
+            border-bottom: 2px solid #e91e63;
         }
         .container {
             max-width: 1000px;
@@ -80,7 +103,7 @@
     <div><a href="index.html"><img src="logo.png" alt="Logo" class="logo"></a></div>
     <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
         <li><a href="#">Resume</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
