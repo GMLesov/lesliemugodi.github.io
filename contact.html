@@ -2,45 +2,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact | Leslie Mugodi</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Contact | Contact | Contact | Leslie Mugodi</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #fff;
+            color: black;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #00274d;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            background-color: #00274d;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background: #00274d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <img src="logo.png" alt="Logo" class="logo" />
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <section class="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form action="https://formspree.io/f/xjvnzzwb" method="POST">
+<header>
+    <h1>Contact Leslie Mugodi</h1>
+    <p>Reach out for collaborations, consultancy or questions</p>
+    
+<nav style="background:white; padding: 10px 0; text-align:center;">
+    <ul style="list-style:none; margin:0; padding:0; display:flex; justify-content:center; gap:30px;">
+        <li><a href="index.html" style="text-decoration:none; color:#00274d; font-weight:bold;">Home</a></li>
+        <li><a href="projects.html" style="text-decoration:none; color:#00274d; font-weight:bold;">Projects</a></li>
+        <li><a href="contact.html" style="text-decoration:none; color:#00274d; font-weight:bold;">Contact</a></li>
+    </ul>
+</nav>
+
+</header>
+
+<section>
+    <h2>Contact Form</h2>
+    <form action="https://formspree.io/f/moqgprgd" method="POST">
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" required />
+        <input type="text" name="name" required>
 
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" required />
+        <input type="email" name="_replyto" required>
 
         <label for="message">Message</label>
-        <textarea name="message" id="message" rows="6" required></textarea>
+        <textarea name="message" rows="6" required></textarea>
 
         <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+    </form>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Leslie Mugodi | All rights reserved</p>
-  </footer>
+<footer>
+    <p>© 2025 Leslie Mugodi | All rights reserved</p>
+</footer>
+
 </body>
 </html>
