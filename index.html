@@ -3,97 +3,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home | Leslie Mugodi | ICT Specialist</title>
+    <title>Home | Leslie Mugodi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        nav ul { display: flex; flex-wrap: wrap; }
-        nav button { display: none; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: #ffffff;
-            color: #000000;
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #fff;
-            padding: 20px 50px;
-        }
-        nav img.logo {
-            height: 100px;
-            height: 100px;
-        }
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        nav ul li {
-            margin-left: 20px;
-        }
-        nav ul li a {
-            color: black;
-            text-decoration: none;
-            font-weight: 500;
-            padding-bottom: 4px;
-        }
-        nav ul li a.active,
-        nav ul li a:hover {
-            border-bottom: 2px solid #e91e63;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        h1 {
-            font-size: 3rem;
-            color: #000000;
-        }
-        h2 {
-            font-size: 2rem;
-            color: #000000;
-            margin: 10px 0;
-        }
-        .subtitle {
-            font-size: 1.2rem;
-            color: #333333;
-            max-width: 700px;
-            margin: 20px auto;
-        }
-        .buttons {
-            margin-top: 30px;
-        }
-        .buttons a {
-            margin: 0 10px;
-            background: #e91e63;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .profile-img {
-            margin-top: 40px;
-            border-radius: 10px;
-            width: 240px;
-            height: auto;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-        }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+        header { background-color: white; color: black; padding: 30px 20px; text-align: center; }
+        section { padding: 20px; max-width: 900px; margin: auto; background: white; margin-top: 20px; border-radius: 5px; }
+        footer { background: #00274d; color: white; text-align: center; padding: 15px; margin-top: 30px; }
+        a { color: #0066cc; text-decoration: none; }
     </style>
-
-<script>
-    function toggleMenu() {
-        const nav = document.querySelector('nav ul');
-        nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
-    }
-</script>
 </head>
 <body>
 
+<header>
+    <h1>Leslie Mugodi, MIET</h1>
+    <p>Telecommunications & ICT Specialist | Data Analytics | MSc IT Management</p>
+</header>
 
 <nav style="background:white; padding: 10px 0; text-align:center;">
     <ul style="list-style:none; margin:0; padding:0; display:flex; justify-content:center; gap:30px;">
@@ -103,21 +28,32 @@
     </ul>
 </nav>
 
-
-<div class="container">
-    <h1>Hi, I'm</h1>
-    <h2>Leslie Mugodi</h2>
-    <p class="subtitle">ICT Specialist · Data Analyst · Engineer<br>
-    Member of the Institution of Engineering and Technology (MIET)</p>
-
-    <div class="buttons">
-        <a href="mailto:lesliemugodi@example.com">Email Me</a>
-        <a href="https://github.com/GMLesov" target="_blank">GitHub</a>
-        <a href="#">Download CV</a>
-    </div>
-
-    <img src="profile.jpg" alt="Leslie Mugodi" class="profile-img">
-</div>
+<section>
+    <h2>About Me</h2>
+    <p>I am a certified MIET professional with a background in Telecommunications and a Master's in Information Technology Management. I specialize in network systems, ICT infrastructure, and data analytics.</p>
+</section>
+<section>
+    <h2>Projects</h2>
+    <ul>
+        <li><strong>Smart Network Monitoring Dashboard:</strong> Python and Power BI project. [<a href="#">View on GitHub</a>]</li>
+    </ul>
+</section>
+<section>
+    <h2>Certifications</h2>
+    <ul>
+        <li>MIET - ID: 1122018677</li>
+        <li>CCNA</li>
+        <li>Azure Fundamentals (AZ-900)</li>
+        <li>Data Analytics</li>
+    </ul>
+</section>
+<section>
+    <h2>Download My CV</h2>
+    <p><a href="Leslie_Mugodi_CV.pdf" download>Click here to download PDF</a></p>
+</section>
+<footer>
+    <p>© 2025 Leslie Mugodi | All rights reserved</p>
+</footer>
 
 </body>
 </html>
