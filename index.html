@@ -4,26 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <title>Home | Leslie Mugodi</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+            border-bottom: 1px solid #ddd;
+        }
+        header img {
+            height: 100px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 35px;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #00274d;
+            font-weight: bold;
+            font-size: 17px;
+        }
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        section h1, section h2 {
+            color: #00274d;
+        }
+        footer {
+            background: #00274d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+    </style>
 </head>
-<body style="margin:0; font-family:Arial, sans-serif; background:#f4f4f4; color:#333;">
-    <header style="background:white; display:flex; align-items:center; justify-content:space-between; padding:20px 30px; border-bottom:1px solid #ccc;">
-        <a href="index.html"><img src="logo.png" alt="Logo" style="height:100px;"></a>
+<body>
+    <header>
+        <a href="index.html"><img src="logo.png" alt="Logo"></a>
         <nav>
-            <ul style="list-style:none; display:flex; gap:30px; margin:0; padding:0;">
-                <li><a href="index.html" style="text-decoration:none; color:#00274d; font-weight:bold;">Home</a></li>
-                <li><a href="projects.html" style="text-decoration:none; color:#00274d; font-weight:bold;">Projects</a></li>
-                <li><a href="contact.html" style="text-decoration:none; color:#00274d; font-weight:bold;">Contact</a></li>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section style="padding:30px; max-width:900px; margin:auto; background:white; margin-top:30px; border-radius:8px;">
+    <section>
         
 <h1>Leslie Mugodi, MIET</h1>
-<p>Telecommunications & ICT Specialist | Data Analytics | MSc IT Management</p>
+<p><strong>Telecommunications & ICT Specialist | Data Analytics | MSc IT Management</strong></p>
 <p>I am a certified MIET professional with a background in Telecommunications and a Master's in Information Technology Management. I specialize in network systems, ICT infrastructure, and data analytics.</p>
 
     </section>
-    <footer style="background:#00274d; color:white; text-align:center; padding:20px; margin-top:40px;">
+    <footer>
         <p>© 2025 Leslie Mugodi | All rights reserved</p>
     </footer>
 </body>
