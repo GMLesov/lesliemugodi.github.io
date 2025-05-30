@@ -14,54 +14,58 @@ header {
 }
 nav {
     background: white;
-    padding: 10px 20px;
+    padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .nav-left img {
-    height: 60px;
+    height: 100px;
 }
 .nav-right ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 30px;
+    gap: 40px;
 }
 .nav-right ul li a {
     text-decoration: none;
     color: #00274d;
     font-weight: bold;
+    font-size: 18px;
 }
 section {
-    padding: 20px;
+    padding: 30px;
     max-width: 900px;
     margin: auto;
     background: white;
-    margin-top: 20px;
-    border-radius: 5px;
+    margin-top: 30px;
+    border-radius: 8px;
 }
 form input, form textarea, form button {
     width: 100%;
-    padding: 10px;
-    margin-top: 8px;
+    padding: 12px;
+    margin-top: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    font-size: 16px;
 }
 form button {
     background-color: #00274d;
     color: white;
     border: none;
     cursor: pointer;
+    font-weight: bold;
 }
 footer {
     background: #00274d;
     color: white;
     text-align: center;
-    padding: 15px;
-    margin-top: 30px;
+    padding: 20px;
+    margin-top: 40px;
 }
 a {
     color: #0066cc;
