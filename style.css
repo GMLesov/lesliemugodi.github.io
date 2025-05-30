@@ -14,18 +14,22 @@ header {
 }
 nav {
     background: white;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-nav ul {
+.nav-left img {
+    height: 60px;
+}
+.nav-right ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
     gap: 30px;
 }
-nav ul li a {
+.nav-right ul li a {
     text-decoration: none;
     color: #00274d;
     font-weight: bold;
