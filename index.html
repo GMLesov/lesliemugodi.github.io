@@ -14,15 +14,14 @@
     nav ul li a { color: #fff; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 6px; }
     .menu-toggle { display: none; flex-direction: column; cursor: pointer; }
     .menu-toggle div { width: 25px; height: 3px; background: white; margin: 4px 0; }
-
     @media (max-width: 768px) {
-      nav ul { 
+      nav ul {
         display: flex;
-        flex-direction: column; 
-        background: #1e1e1e; 
-        position: absolute; 
-        top: 60px; 
-        right: 0; 
+        flex-direction: column;
+        background: #1e1e1e;
+        position: absolute;
+        top: 60px;
+        right: 0;
         width: 200px;
         transform: translateX(100%);
         opacity: 0;
@@ -35,6 +34,13 @@
       }
       .menu-toggle { display: flex; }
     }
+    .container { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 40px 20px; }
+    .intro { max-width: 600px; }
+    .intro h1 { font-size: 2em; color: #f36; }
+    .intro p { font-size: 1.1em; line-height: 1.6; }
+    .btn { display: inline-block; background: #f36; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 15px; }
+    .profile-photo { max-width: 300px; border-radius: 12px; margin-top: 20px; }
+    footer { text-align: center; padding: 20px; background: #1e1e1e; font-size: 0.9em; }
   </style>
 </head>
 <body>
@@ -54,7 +60,18 @@
     </nav>
   </header>
 
-  <!-- Your site sections go here -->
+  <section class="container">
+    <div class="intro">
+      <h1>Hi, I'm <span style="color: #ff4081">Leslie Mugodi</span></h1>
+      <p>MIET | ICT & Data Analytics Specialist | MSc IT Management</p>
+      <p>I provide smart solutions in networking, cloud, and analytics. With a strong academic and professional background, I drive digital transformation across ICT environments.</p>
+      <a class="btn" href="Leslie_Mugodi_CV.pdf" download>Download CV</a>
+    </div>
+    <img src="profile.jpg" alt="Leslie Mugodi" class="profile-photo" />
+  </section>
 
+  <footer>
+    © 2025 Leslie Mugodi | <a href="https://github.com/GMLesov" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/lesliemugodi" target="_blank">LinkedIn</a>
+  </footer>
 </body>
 </html>
