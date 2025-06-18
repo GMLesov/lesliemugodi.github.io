@@ -1,33 +1,47 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Contact - Leslie Mugodi</title>
-  <link rel="stylesheet" href="style.css"/>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leslie Mugodi | MIET | ICT Specialist</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
+
 <body>
-<header>
-  <img src="logo.png" alt="Logo" class="logo"/>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-<section class="hero">
-  <div class="hero-text">
-    <h1>Contact Me</h1>
-    <form action="https://formspree.io/f/xpzvkwpe" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </div>
-</section>
-<footer>&copy; 2025 Leslie Mugodi</footer>
+  <header>
+    <img src="logo.png" alt="Logo" class="logo" />
+    <div class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">
+      <div></div><div></div><div></div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Contact Me</h1>
+      <form action="https://formspree.io/f/xwkgyyqq" method="POST">
+        <input type="text" name="name" placeholder="Your name" required><br><br>
+        <input type="email" name="email" placeholder="Your email" required><br><br>
+        <textarea name="message" placeholder="Your message" required></textarea><br><br>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Leslie Mugodi |
+    <a href="https://github.com/GMLesov" target="_blank">GitHub</a> |
+    <a href="https://linkedin.com/in/lesliemugodi" target="_blank">LinkedIn</a>
+  </footer>
 </body>
 </html>

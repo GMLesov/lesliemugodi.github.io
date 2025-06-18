@@ -1,56 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects - Leslie Mugodi</title>
+  <title>Leslie Mugodi | MIET | ICT Specialist</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <style>
-    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #121212; color: #f0f0f0; }
-    header {
-      background: #1e1e1e;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .logo { height: 60px; }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      margin: 0;
-      padding: 0;
-    }
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .content {
-      padding: 40px 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #1e1e1e;
-      margin-top: 40px;
-    }
-    footer a {
-      color: #999;
-      text-decoration: none;
-      margin: 0 8px;
-    }
-  </style>
 </head>
+
 <body>
   <header>
     <img src="logo.png" alt="Logo" class="logo" />
+    <div class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">
+      <div></div><div></div><div></div>
+    </div>
     <nav>
       <ul>
         <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
@@ -60,13 +26,15 @@
     </nav>
   </header>
 
-  <section class="content">
-    <h2>Highlighted Projects</h2>
-    <ul>
-      <li><strong>Smart Network Dashboard:</strong> Python + Power BI solution. <a href="#">View</a></li>
-      <li><strong>ICT Asset Manager:</strong> Web app to track assets. <a href="#">View</a></li>
-      <li><strong>Data Insights Tool:</strong> Built with Python and Plotly Dash. <a href="#">View</a></li>
-    </ul>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Projects</h1>
+      <ul>
+        <li><strong>Smart Network Monitoring Dashboard:</strong> Python & Power BI dashboard. <a href="https://github.com/GMLesov" target="_blank">GitHub</a></li>
+        <li><strong>Farm Management App:</strong> Android app for animal care and harvest. <a href="https://github.com/GMLesov" target="_blank">GitHub</a></li>
+        <li><strong>Educational YouTube Bot:</strong> AI chatbot with speech. <a href="https://github.com/GMLesov" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
   </section>
 
   <footer>
