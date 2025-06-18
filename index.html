@@ -4,25 +4,61 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leslie Mugodi | MIET | ICT Specialist</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-BxRZxslN2O7mI2RAlV6pgjqzHKY6c8+XnRGLc4LCXgYyEhEf7IRK0O0FgDdYbxUCz0T0ckHQlZf9q0bQpGPehA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
     body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #121212; color: #f0f0f0; }
-    header { background: #1e1e1e; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 10; }
+
+    header {
+      background: #1e1e1e;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 10;
+    }
+
     .logo { height: 60px; }
-    nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; transition: transform 0.3s ease; }
-    nav ul li a { color: #fff; text-decoration: none; font-weight: bold; display: flex; align-items: center; gap: 6px; }
-    .menu-toggle { display: none; flex-direction: column; cursor: pointer; }
-    .menu-toggle div { width: 25px; height: 3px; background: white; margin: 4px 0; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+      transition: transform 0.3s ease;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background: white;
+      margin: 4px 0;
+    }
 
     @media (max-width: 768px) {
-      nav ul { 
-        display: flex;
-        flex-direction: column; 
-        background: #1e1e1e; 
-        position: absolute; 
-        top: 60px; 
-        right: 0; 
+      nav ul {
+        flex-direction: column;
+        background: #1e1e1e;
+        position: absolute;
+        top: 60px;
+        right: 0;
         width: 200px;
         transform: translateX(100%);
         opacity: 0;
@@ -35,6 +71,57 @@
       }
       .menu-toggle { display: flex; }
     }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 2em;
+    }
+
+    .hero-text span {
+      color: #f92672;
+    }
+
+    .hero-text .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #f92672;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .hero-image img {
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e1e1e;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #999;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
   </style>
 </head>
 <body>
@@ -54,6 +141,22 @@
     </nav>
   </header>
 
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Leslie Mugodi</span></h1>
+      <p>MIET | ICT & Data Analytics Specialist | MSc IT Management</p>
+      <p>I provide smart solutions in networking, cloud, and analytics. With a strong academic and professional background, I drive digital transformation across ICT environments.</p>
+      <a href="Leslie_Mugodi_CV.pdf" class="btn">Download CV</a>
+    </div>
+    <div class="hero-image">
+      <img src="profile.jpg" alt="Leslie Mugodi" />
+    </div>
+  </section>
 
+  <footer>
+    © 2025 Leslie Mugodi |
+    <a href="https://github.com/GMLesov" target="_blank">GitHub</a> |
+    <a href="https://linkedin.com/in/lesliemugodi" target="_blank">LinkedIn</a>
+  </footer>
 </body>
 </html>
