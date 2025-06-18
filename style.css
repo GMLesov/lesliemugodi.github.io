@@ -95,6 +95,8 @@ footer {
   padding: 20px;
   background: #1e1e1e;
   margin-top: 40px;
+  bottom: 0;
+  position: absolute;
 }
 footer a {
   color: #999;
