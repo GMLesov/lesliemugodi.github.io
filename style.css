@@ -96,7 +96,7 @@ footer {
   background: #1e1e1e;
   margin-top: 40px;
   bottom: 0;
-  position: absolute;
+  position: center;
 }
 footer a {
   color: #999;
