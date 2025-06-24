@@ -110,3 +110,27 @@ form button {
 form button:hover {
   background: #e5145e;
 }
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+}
+.hero-text h1 { font-size: 2em; }
+.hero-text span { color: #f92672; }
+.hero-text .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #f92672;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.hero-image img {
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  margin-top: 20px;
+}
