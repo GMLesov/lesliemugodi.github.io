@@ -17,14 +17,23 @@
       </ul>
     </nav>
   </header>
-  <section class="contact-section">
-    <h2>Contact Me</h2>
-  <form action="https://formspree.io/f/xldnoewk" method="POST">
-      <input type="text" placeholder="Your name" required />
-      <input type="email" placeholder="Your email" required />
-      <textarea rows="5" placeholder="Your message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+ <section class="contact-section">
+  <h2>Get in Touch</h2>
+  <form action="https://formspree.io/f/xldnoewk" method="POST" class="contact-form">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <input type="hidden" name="_subject" value="New message from portfolio site">
+    <input type="hidden" name="_redirect" value="thankyou.html">
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 </body>
 </html>
