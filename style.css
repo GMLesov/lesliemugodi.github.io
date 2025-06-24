@@ -9,7 +9,7 @@ header {
   justify-content: space-between;
 }
 
-.logo { height: 100px; }
+.logo { height: 60px; }
 
 nav ul {
   list-style: none;
@@ -95,7 +95,6 @@ footer {
   padding: 20px;
   background: #1e1e1e;
   margin-top: 40px;
-  bottom: 0;
 }
 footer a {
   color: #999;
