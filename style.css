@@ -134,3 +134,14 @@ form button:hover {
   box-shadow: 0 4px 10px rgba(0,0,0,0.4);
   margin-top: 20px;
 }
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e1e1e;
+  margin-top: 40px;
+}
+footer a {
+  color: #999;
+  text-decoration: none;
+  margin: 0 8px;
+}
