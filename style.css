@@ -135,6 +135,10 @@ form button:hover {
   margin-top: 20px;
 }
 footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
   padding: 20px;
   background: #1e1e1e;
