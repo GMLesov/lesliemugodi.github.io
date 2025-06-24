@@ -2,17 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects | Leslie Mugodi</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
 </head>
 <body>
   <header>
     <img src="logo.png" alt="Logo" class="logo" />
-    <div class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">
-      <div></div><div></div><div></div>
-    </div>
     <nav>
       <ul>
         <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
@@ -21,14 +17,22 @@
       </ul>
     </nav>
   </header>
-
-  <main class="content">
-    <h1>My Top Projects</h1>
-    <ul>
-      <li><strong>Smart Network Monitoring Dashboard</strong> - Built with Python & Power BI. <a href="https://github.com/GMLesov">GitHub</a></li>
-      <li><strong>Farm Management App</strong> - Android app for farm task tracking. <a href="https://github.com/GMLesov">GitHub</a></li>
-      <li><strong>Vehicle Telematics System</strong> - Live tracker integration with mobile app. <a href="https://github.com/GMLesov">GitHub</a></li>
-    </ul>
-  </main>
+  <section class="projects">
+    <h2>My Top Projects</h2>
+    <div class="project-list">
+      <div class="project-item">
+        <h3>Smart Network Monitoring Dashboard</h3>
+        <p>Built with Python & Power BI. <a href="#">GitHub</a></p>
+      </div>
+      <div class="project-item">
+        <h3>Farm Management App</h3>
+        <p>Android app for farm task tracking. <a href="#">GitHub</a></p>
+      </div>
+      <div class="project-item">
+        <h3>Vehicle Telematics System</h3>
+        <p>Live tracker integration with mobile app. <a href="#">GitHub</a></p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>

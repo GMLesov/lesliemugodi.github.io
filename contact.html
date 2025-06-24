@@ -2,17 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact | Leslie Mugodi</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
 </head>
 <body>
   <header>
     <img src="logo.png" alt="Logo" class="logo" />
-    <div class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">
-      <div></div><div></div><div></div>
-    </div>
     <nav>
       <ul>
         <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
@@ -21,15 +17,14 @@
       </ul>
     </nav>
   </header>
-
-  <main class="content">
-    <h1>Contact Me</h1>
-    <form action="https://formspree.io/f/mwkgyldb" method="POST">
-      <input type="text" name="name" placeholder="Your name" required /><br>
-      <input type="email" name="_replyto" placeholder="Your email" required /><br>
-      <textarea name="message" placeholder="Your message" required></textarea><br>
-      <button type="submit">Send</button>
+  <section class="contact-section">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your name" required />
+      <input type="email" placeholder="Your email" required />
+      <textarea rows="5" placeholder="Your message" required></textarea>
+      <button type="submit">Send Message</button>
     </form>
-  </main>
+  </section>
 </body>
 </html>
