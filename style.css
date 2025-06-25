@@ -8,7 +8,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-.logo { height: 150px; }
+.logo { height: 80px; }
 
 nav ul {
   list-style: none;
