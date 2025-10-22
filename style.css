@@ -86,13 +86,6 @@ section.highlights {
   margin-bottom: 3rem;
 }
 
-.highlights {
-  padding: 4rem 2rem;
-  text-align: center;
-  color: #fff;
-  background: #121212;
-}
-
 .highlights h2 {
   font-size: 2.2rem;
   color: #f92672;
@@ -154,18 +147,22 @@ footer a {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
-  .hero-container {
-    flex-direction: column;
+@media (max-width: 400px) {
+  .hero-text {
+    padding-right: 0 !important;
     text-align: center;
   }
 
-  .hero-text {
-    padding: 0;
+  .hero-image img {
+    width: 200px;
   }
 
-  .highlight-card {
-    flex: 1 1 100%;
-    max-width: 100%;
+  .highlight-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
   }
 }
