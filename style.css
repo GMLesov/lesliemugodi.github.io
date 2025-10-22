@@ -149,3 +149,49 @@ footer a {
   text-decoration: none;
   margin: 0 8px;
 }
+/* Highlights Section */
+.highlights {
+  padding: 60px 20px;
+  background: #1a1a1a;
+  text-align: center;
+}
+
+.highlights h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #f92672;
+}
+
+.highlight-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.highlight-item {
+  background: #262626;
+  padding: 20px;
+  border-radius: 10px;
+  width: 260px;
+  transition: transform 0.3s ease;
+}
+
+.highlight-item:hover {
+  transform: translateY(-5px);
+}
+
+.highlight-item h3 {
+  margin: 10px 0;
+  color: #fff;
+}
+
+.highlight-item p {
+  font-size: 0.95em;
+  color: #ccc;
+}
+
+.highlight-item i {
+  color: #f92672;
+}
+
