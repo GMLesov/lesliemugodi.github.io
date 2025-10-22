@@ -80,6 +80,12 @@ nav ul li a:hover {
 }
 
 /* Highlights Section */
+section.highlights {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+}
+
 .highlights {
   padding: 4rem 2rem;
   text-align: center;
