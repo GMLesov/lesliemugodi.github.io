@@ -154,9 +154,9 @@ footer a {
 }
 /* Highlights Section */
 .highlights {
-  padding: 3rem 2rem;
-  background-color: #111;
-  color: white;
+  padding: 60px 20px;
+  background: #1a1a1a;
+  text-align: center;
 }
 .highlight-cards {
   display: flex;
@@ -194,7 +194,6 @@ footer a {
   font-size: 2em;
   margin-bottom: 30px;
   color: #f92672;
-}
 
 .highlight-grid {
   display: flex;
