@@ -84,30 +84,31 @@ nav ul li a:hover {
   padding: 4rem 2rem;
   text-align: center;
   color: #fff;
+  background: #121212;
 }
 
 .highlights h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #f92672;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .highlight-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
+  gap: 2rem;
 }
 
 .highlight-card {
   background-color: #1e1e1e;
   border-radius: 12px;
   padding: 2rem;
-  max-width: 300px;
-  flex: 1 1 260px;
+  width: 280px;
+  max-width: 90%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
-  text-align: left;
+  text-align: center;
 }
 
 .highlight-card:hover {
@@ -116,23 +117,21 @@ nav ul li a:hover {
 }
 
 .highlight-card i {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   color: #f92672;
   margin-bottom: 1rem;
-  display: block;
 }
 
 .highlight-card h3 {
-  font-size: 1.25rem;
-  margin: 0.5rem 0;
-  color: #ffffff;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .highlight-card p {
-  font-size: 0.95rem;
-  color: #cccccc;
-  margin: 0;
+  font-size: 1rem;
+  color: #ccc;
 }
+
 
 /* Footer */
 footer {
