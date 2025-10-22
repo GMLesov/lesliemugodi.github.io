@@ -1,23 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Leslie Mugodi",
-  "url": "https://lesliemugodi.com",
-  "logo": "https://lesliemugodi.com/logo.png",
-  "sameAs": [
-    "https://linkedin.com/in/leslie-mugodi-miet-6169a862",
-    "https://github.com/GMLesov"
-  ]
-}
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leslie Mugodi | MIET | ICT Specialist</title>
 
+  <!-- SEO Meta -->
   <meta name="description" content="Leslie Mugodi - ICT & Data Analytics Specialist | MIET | MSc IT Management. Discover projects, contact info, and download my CV.">
   <meta name="author" content="Leslie Mugodi">
   <meta property="og:title" content="Leslie Mugodi | ICT & Data Analytics Specialist">
@@ -26,21 +14,31 @@
   <meta property="og:url" content="https://lesliemugodi.com/">
   <meta name="twitter:card" content="summary_large_image">
 
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Leslie Mugodi",
+    "url": "https://lesliemugodi.com",
+    "logo": "https://lesliemugodi.com/logo.png",
+    "sameAs": [
+      "https://linkedin.com/in/leslie-mugodi-miet-6169a862",
+      "https://github.com/GMLesov"
+    ]
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="canonical" href="https://lesliemugodi.com/">
- 
-  <link rel="icon" type="image/png" href="https://github.com/GMLesov/lesliemugodi.github.io/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="https://github.com/GMLesov/lesliemugodi.github.io/favicon.svg" />
-  <link rel="shortcut icon" href="https://github.com/GMLesov/lesliemugodi.github.io/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="https://github.com/GMLesov/lesliemugodi.github.io/apple-touch-icon.png" />
-  <link rel="manifest" href="https://github.com/GMLesov/lesliemugodi.github.io/site.webmanifest" />
-  
+  <link rel="canonical" href="https://lesliemugodi.com/" />
 </head>
+
 <body>
   <header>
-    <img src="logo.png" alt="Logo" class="logo" />
+    <img src="logo.png" alt="Leslie Mugodi Logo" class="logo" />
     <div class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">
       <div></div><div></div><div></div>
     </div>
@@ -53,15 +51,38 @@
     </nav>
   </header>
 
+  <!-- HERO SECTION -->
   <section class="hero">
     <div class="hero-text">
       <h1>Hi, I'm <span>Leslie Mugodi</span></h1>
-      <p>MIET | ICT & Data Analytics Specialist | MSc IT Management</p>
+      <p class="subheading">MIET | ICT & Data Analytics Specialist | MSc IT Management</p>
       <p>I provide smart solutions in networking, cloud, and analytics. With a strong academic and professional background, I drive digital transformation across ICT environments.</p>
       <a href="Leslie_Mugodi_CV.pdf" class="btn">Download CV</a>
     </div>
     <div class="hero-image">
       <img src="profile.jpg" alt="Leslie Mugodi" />
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS SECTION -->
+  <section class="highlights">
+    <h2>Highlights</h2>
+    <div class="highlight-grid">
+      <div class="highlight-item">
+        <i class="fas fa-network-wired fa-2x"></i>
+        <h3>Networking</h3>
+        <p>Specialized in network design, cloud integration, and telecom systems.</p>
+      </div>
+      <div class="highlight-item">
+        <i class="fas fa-chart-line fa-2x"></i>
+        <h3>Data Analytics</h3>
+        <p>Turning data into actionable insights using modern analytics tools.</p>
+      </div>
+      <div class="highlight-item">
+        <i class="fas fa-server fa-2x"></i>
+        <h3>Cloud & Infrastructure</h3>
+        <p>Skilled in deploying scalable cloud and hybrid infrastructure solutions.</p>
+      </div>
     </div>
   </section>
 
