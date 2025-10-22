@@ -154,11 +154,42 @@ footer a {
 }
 /* Highlights Section */
 .highlights {
-  padding: 60px 20px;
-  background: #1a1a1a;
-  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #111;
+  color: white;
+}
+.highlight-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
+.card {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(255, 0, 128, 0.4);
+}
+
+.card h3 {
+  margin-top: 0.5rem;
+  color: #e91e63;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  color: #ccc;
+}
 .highlights h2 {
   font-size: 2em;
   margin-bottom: 30px;
