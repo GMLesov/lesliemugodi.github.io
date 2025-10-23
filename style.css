@@ -222,14 +222,21 @@ form {
 .container {
   width: 100%;
   max-width: 500px;
+  margin: 0 auto;
   text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff1493;
+  margin-bottom: 30px;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-top: 30px;
 }
 
 .contact-form input,
@@ -258,9 +265,10 @@ form {
   border-radius: 999px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-form button:hover {
   background: linear-gradient(to right, #ff1493, #e60073);
+  box-shadow: 0 4px 12px rgba(255, 20, 147, 0.4);
 }
