@@ -231,6 +231,7 @@ form {
   font-weight: bold;
   color: #ff1493;
   margin-bottom: 30px;
+  text-align: center; /* ✅ Add this */
 }
 
 .contact-form {
