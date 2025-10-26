@@ -464,6 +464,7 @@ main {
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  text-align: left;
 }
 
 .form-group.error label {
