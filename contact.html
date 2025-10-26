@@ -17,17 +17,182 @@
       </ul>
     </nav>
   </header>
-<section class="contact-section">
-  <div class="contact-container">
-    <h2 class="contact-heading">Get in Touch</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</section>
+ <section class="contact-section">
+    <div class="contact-container">
+      <h1 class="contact-heading">Get in Touch</h1>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required aria-describedby="name-error" />
+          <span class="success-icon">✓</span>
+          <div class="error-message" id="name-error" role="alert"></div>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required aria-describedby="email-error" />
+          <span class="success-icon">✓</span>
+          <div class="error-message" id="email-error" role="alert"></div>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="Tell me about your project or inquiry..." required aria-describedby="message-error"></textarea>
+          <span class="success-icon">✓</span>
+          <div class="error-message" id="message-error" role="alert"></div>
+        </div>
+        
+        <button type="submit" aria-describedby="submit-status">
+          <div class="loading-spinner"></div>
+          <span class="button-text">Send Message</span>
+        </button>
+        
+        <div class="success-message" id="successMessage" role="alert">
+          <h3>Message Sent Successfully! 🎉</h3>
+          <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    // Form validation and submission
+    const form = document.getElementById('contactForm');
+    const nameField = document.getElementById('name');
+    const emailField = document.getElementById('email');
+    const messageField = document.getElementById('message');
+    const submitButton = form.querySelector('button[type="submit"]');
+    const successMessage = document.getElementById('successMessage');
+
+    // Validation rules
+    const validators = {
+      name: (value) => {
+        if (!value.trim()) return 'Name is required';
+        if (value.trim().length < 2) return 'Name must be at least 2 characters';
+        if (!/^[a-zA-Z\s'-]+$/.test(value)) return 'Name contains invalid characters';
+        return null;
+      },
+      email: (value) => {
+        if (!value.trim()) return 'Email is required';
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(value)) return 'Please enter a valid email address';
+        return null;
+      },
+      message: (value) => {
+        if (!value.trim()) return 'Message is required';
+        if (value.trim().length < 10) return 'Message must be at least 10 characters';
+        if (value.trim().length > 1000) return 'Message must be less than 1000 characters';
+        return null;
+      }
+    };
+
+    // Validate field
+    function validateField(field) {
+      const value = field.value;
+      const fieldName = field.name;
+      const formGroup = field.closest('.form-group');
+      const errorElement = formGroup.querySelector('.error-message');
+      
+      const error = validators[fieldName](value);
+      
+      if (error) {
+        formGroup.classList.add('error');
+        formGroup.classList.remove('success');
+        errorElement.textContent = error;
+        return false;
+      } else {
+        formGroup.classList.remove('error');
+        if (value.trim()) {
+          formGroup.classList.add('success');
+        }
+        errorElement.textContent = '';
+        return true;
+      }
+    }
+
+    // Real-time validation
+    [nameField, emailField, messageField].forEach(field => {
+      field.addEventListener('blur', () => validateField(field));
+      field.addEventListener('input', () => {
+        if (field.closest('.form-group').classList.contains('error')) {
+          validateField(field);
+        }
+      });
+    });
+
+    // Form submission
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      // Validate all fields
+      const isNameValid = validateField(nameField);
+      const isEmailValid = validateField(emailField);
+      const isMessageValid = validateField(messageField);
+      
+      if (!isNameValid || !isEmailValid || !isMessageValid) {
+        // Focus first invalid field
+        const firstError = form.querySelector('.form-group.error input, .form-group.error textarea');
+        if (firstError) firstError.focus();
+        return;
+      }
+
+      // Show loading state
+      submitButton.classList.add('loading');
+      submitButton.disabled = true;
+
+      try {
+        // Simulate form submission (replace with actual endpoint)
+        await simulateFormSubmission({
+          name: nameField.value,
+          email: emailField.value,
+          message: messageField.value
+        });
+
+        // Show success message
+        successMessage.classList.add('show');
+        form.reset();
+        
+        // Reset form states
+        document.querySelectorAll('.form-group').forEach(group => {
+          group.classList.remove('success', 'error');
+        });
+        
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          successMessage.classList.remove('show');
+        }, 5000);
+
+      } catch (error) {
+        alert('Sorry, there was an error sending your message. Please try again.');
+      } finally {
+        // Remove loading state
+        submitButton.classList.remove('loading');
+        submitButton.disabled = false;
+      }
+    });
+
+    // Simulate form submission (replace with actual API call)
+    function simulateFormSubmission(data) {
+      return new Promise((resolve) => {
+        console.log('Form submission data:', data);
+        setTimeout(resolve, 1500); // Simulate network delay
+      });
+    }
+
+    // Keyboard navigation enhancement
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && e.target.tagName !== 'TEXTAREA') {
+        const formElements = Array.from(form.querySelectorAll('input, textarea, button'));
+        const currentIndex = formElements.indexOf(e.target);
+        const nextElement = formElements[currentIndex + 1];
+        
+        if (nextElement && nextElement.tagName !== 'BUTTON') {
+          e.preventDefault();
+          nextElement.focus();
+        }
+      }
+    });
+  </script>
 
 <footer>
     © 2025 Leslie Mugodi |
