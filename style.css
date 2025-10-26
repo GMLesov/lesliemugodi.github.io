@@ -212,26 +212,25 @@ form {
   }
 }
 .contact-section {
-  padding: 60px 20px;
+  padding: 80px 20px;
   background-color: #121212;
-  color: #fff;
   display: flex;
   justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 
-.container {
+.contact-container {
   width: 100%;
   max-width: 500px;
-  margin: 0 auto;
   text-align: center;
 }
 
-.contact-section h2 {
+.contact-heading {
   font-size: 2rem;
-  font-weight: bold;
-  color: #ff1493;
+  font-weight: 800;
   margin-bottom: 30px;
-  text-align: center; /* ✅ Add this */
+  color: #ff1493;
 }
 
 .contact-form {
@@ -266,10 +265,15 @@ form {
   border-radius: 999px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .contact-form button:hover {
   background: linear-gradient(to right, #ff1493, #e60073);
-  box-shadow: 0 4px 12px rgba(255, 20, 147, 0.4);
+}
+
+@media (max-width: 500px) {
+  .contact-heading {
+    font-size: 1.6rem;
+  }
 }
