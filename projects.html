@@ -5,43 +5,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects | Leslie Mugodi</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-        <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
-        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-      </ul>
-    </nav>
+    <div class="header-content">
+      <img src="logo.png" alt="Leslie Mugodi Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
+          <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <section class="projects">
-    <h2>My Top Projects</h2>
-    <div class="projects">
-  <h2>My Top Projects</h2>
-  <div class="project-list">
-    <div class="project-item">
-      <h3>Smart Network Monitoring Dashboard</h3>
-      <p>Built with Python & Power BI. <a href="#">GitHub</a></p>
+
+  <main>
+    <section class="projects-hero">
+      <h1>My Projects</h1>
+      <p>Explore my portfolio of innovative solutions in network monitoring, mobile development, and IoT systems.</p>
+    </section>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Smart Network Monitoring Dashboard</h3>
+        <p>A comprehensive real-time network monitoring solution that provides intelligent insights and automated alerting for enterprise infrastructure management.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Power BI</span>
+          <span class="tech-tag">SQL</span>
+          <span class="tech-tag">REST API</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">
+            <i class="fab fa-github"></i> View Code
+          </a>
+          <a href="#" class="project-link secondary">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Farm Management App</h3>
+        <p>Android application designed to streamline farm operations with task tracking, crop monitoring, and resource management capabilities for modern agriculture.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Android</span>
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">SQLite</span>
+          <span class="tech-tag">GPS</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">
+            <i class="fab fa-github"></i> View Code
+          </a>
+          <a href="#" class="project-link secondary">
+            <i class="fab fa-google-play"></i> Download
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Vehicle Telematics System</h3>
+        <p>IoT-based vehicle tracking and monitoring system with real-time GPS integration, mobile app interface, and comprehensive fleet management dashboard.</p>
+        <div class="project-tech">
+          <span class="tech-tag">IoT</span>
+          <span class="tech-tag">React Native</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">MongoDB</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">
+            <i class="fab fa-github"></i> View Code
+          </a>
+          <a href="#" class="project-link secondary">
+            <i class="fas fa-play"></i> Watch Demo
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="project-item">
-      <h3>Farm Management App</h3>
-      <p>Android app for farm task tracking. <a href="#">GitHub</a></p>
-    </div>
-    <div class="project-item">
-      <h3>Vehicle Telematics System</h3>
-      <p>Live tracker integration with mobile app. <a href="#">GitHub</a></p>
-    </div>
-  </div>
-</div>
-  </section>
+  </main>
+
   <footer>
     © 2025 Leslie Mugodi |
-    <a href="https://github.com/GMLesov" target="_blank"> GitHub </a> |
-    <a href="https://linkedin.com/in/leslie-mugodi-miet-6169a862" target="_blank"> LinkedIn </a>
+    <a href="https://github.com/GMLesov" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a> |
+    <a href="https://linkedin.com/in/leslie-mugodi-miet-6169a862" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
   </footer>
 </body>
-
 </html>
