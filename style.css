@@ -266,6 +266,7 @@ form {
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s ease;
+  align: center
 }
 
 .contact-form button:hover {
