@@ -2,202 +2,263 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Leslie Mugodi</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-        <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
-        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-      </ul>
-    </nav>
+    <div class="header-content">
+      <img src="logo.png" alt="Leslie Mugodi Logo" class="logo" />
+      <div class="menu-toggle">
+        <div></div><div></div><div></div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
+          <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
- <section class="contact-section">
+
+  <section class="contact-section">
     <div class="contact-container">
-      <h1 class="contact-heading">Get in Touch</h1>
+      <h1 class="contact-heading">Get In Touch</h1>
       <form class="contact-form" id="contactForm" novalidate>
         <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter your full name" required aria-describedby="name-error" />
-          <span class="success-icon">✓</span>
-          <div class="error-message" id="name-error" role="alert"></div>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+          <span class="success-icon"><i class="fas fa-check"></i></span>
+          <div class="error-message">Please enter your full name</div>
         </div>
-        
+
         <div class="form-group">
-          <label for="email">Your Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email address" required aria-describedby="email-error" />
-          <span class="success-icon">✓</span>
-          <div class="error-message" id="email-error" role="alert"></div>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+          <span class="success-icon"><i class="fas fa-check"></i></span>
+          <div class="error-message">Please enter a valid email address</div>
         </div>
-        
+
         <div class="form-group">
-          <label for="message">Your Message</label>
-          <textarea id="message" name="message" placeholder="Tell me about your project or inquiry..." required aria-describedby="message-error"></textarea>
-          <span class="success-icon">✓</span>
-          <div class="error-message" id="message-error" role="alert"></div>
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+          <span class="success-icon"><i class="fas fa-check"></i></span>
+          <div class="error-message">Please enter a subject</div>
         </div>
-        
-        <button type="submit" aria-describedby="submit-status">
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+          <span class="success-icon"><i class="fas fa-check"></i></span>
+          <div class="error-message">Please enter your message</div>
+        </div>
+
+        <button type="submit" aria-label="Send Message">
           <div class="loading-spinner"></div>
           <span class="button-text">Send Message</span>
         </button>
-        
-        <div class="success-message" id="successMessage" role="alert">
-          <h3>Message Sent Successfully! 🎉</h3>
-          <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
-        </div>
       </form>
+
+      <div class="success-message" id="successMessage">
+        <h3>Message Sent Successfully!</h3>
+        <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+      </div>
     </div>
   </section>
 
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Leslie Mugodi</h3>
+        <p>ICT & Data Analytics Specialist with expertise in network design, cloud integration, and modern analytics solutions.</p>
+        <div class="social-links">
+          <a href="https://github.com/GMLesov" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/leslie-mugodi-miet-6169a862" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:contact@lesliemugodi.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <div class="footer-links">
+          <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          <a href="projects.html"><i class="fas fa-code"></i> Projects</a>
+          <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+          <a href="#" download><i class="fas fa-download"></i> Download CV</a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Expertise</h3>
+        <div class="footer-links">
+          <a href="#"><i class="fas fa-network-wired"></i> Network Design</a>
+          <a href="#"><i class="fas fa-chart-bar"></i> Data Analytics</a>
+          <a href="#"><i class="fas fa-cloud"></i> Cloud Solutions</a>
+          <a href="#"><i class="fas fa-mobile-alt"></i> Mobile Development</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Leslie Mugodi | MIET | All rights reserved</p>
+    </div>
+  </footer>
+
   <script>
-    // Form validation and submission
-    const form = document.getElementById('contactForm');
-    const nameField = document.getElementById('name');
-    const emailField = document.getElementById('email');
-    const messageField = document.getElementById('message');
-    const submitButton = form.querySelector('button[type="submit"]');
-    const successMessage = document.getElementById('successMessage');
-
-    // Validation rules
-    const validators = {
-      name: (value) => {
-        if (!value.trim()) return 'Name is required';
-        if (value.trim().length < 2) return 'Name must be at least 2 characters';
-        if (!/^[a-zA-Z\s'-]+$/.test(value)) return 'Name contains invalid characters';
-        return null;
-      },
-      email: (value) => {
-        if (!value.trim()) return 'Email is required';
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(value)) return 'Please enter a valid email address';
-        return null;
-      },
-      message: (value) => {
-        if (!value.trim()) return 'Message is required';
-        if (value.trim().length < 10) return 'Message must be at least 10 characters';
-        if (value.trim().length > 1000) return 'Message must be less than 1000 characters';
-        return null;
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile menu functionality
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navUl = document.querySelector('nav ul');
+      
+      if (menuToggle && navUl) {
+        menuToggle.addEventListener('click', function() {
+          navUl.classList.toggle('active');
+          
+          // Animate hamburger menu
+          const bars = menuToggle.querySelectorAll('div');
+          bars[0].style.transform = navUl.classList.contains('active') ? 'rotate(45deg) translate(6px, 6px)' : '';
+          bars[1].style.opacity = navUl.classList.contains('active') ? '0' : '1';
+          bars[2].style.transform = navUl.classList.contains('active') ? 'rotate(-45deg) translate(6px, -6px)' : '';
+        });
+        
+        // Close menu when clicking on nav links
+        navUl.addEventListener('click', function(e) {
+          if (e.target.tagName === 'A') {
+            navUl.classList.remove('active');
+            const bars = menuToggle.querySelectorAll('div');
+            bars[0].style.transform = '';
+            bars[1].style.opacity = '1';
+            bars[2].style.transform = '';
+          }
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+          if (!menuToggle.contains(e.target) && !navUl.contains(e.target)) {
+            navUl.classList.remove('active');
+            const bars = menuToggle.querySelectorAll('div');
+            bars[0].style.transform = '';
+            bars[1].style.opacity = '1';
+            bars[2].style.transform = '';
+          }
+        });
       }
-    };
 
-    // Validate field
-    function validateField(field) {
-      const value = field.value;
-      const fieldName = field.name;
-      const formGroup = field.closest('.form-group');
-      const errorElement = formGroup.querySelector('.error-message');
-      
-      const error = validators[fieldName](value);
-      
-      if (error) {
-        formGroup.classList.add('error');
-        formGroup.classList.remove('success');
-        errorElement.textContent = error;
-        return false;
-      } else {
-        formGroup.classList.remove('error');
-        if (value.trim()) {
-          formGroup.classList.add('success');
+      // Form validation and submission
+      const form = document.getElementById('contactForm');
+      const successMessage = document.getElementById('successMessage');
+
+      const validationRules = {
+        name: {
+          pattern: /^[a-zA-Z\s]{2,50}$/,
+          message: 'Please enter a valid name (2-50 characters, letters only)'
+        },
+        email: {
+          pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+          message: 'Please enter a valid email address'
+        },
+        subject: {
+          pattern: /^.{5,100}$/,
+          message: 'Subject must be between 5-100 characters'
+        },
+        message: {
+          pattern: /^.{10,1000}$/,
+          message: 'Message must be between 10-1000 characters'
         }
-        errorElement.textContent = '';
+      };
+
+      Object.keys(validationRules).forEach(fieldName => {
+        const field = document.getElementById(fieldName);
+        const formGroup = field.closest('.form-group');
+        const errorMessage = formGroup.querySelector('.error-message');
+
+        field.addEventListener('input', () => {
+          validateField(field, formGroup, errorMessage, validationRules[fieldName]);
+        });
+
+        field.addEventListener('blur', () => {
+          validateField(field, formGroup, errorMessage, validationRules[fieldName]);
+        });
+      });
+
+      function validateField(field, formGroup, errorMessage, rule) {
+        const value = field.value.trim();
+        
+        if (!value) {
+          setFieldState(formGroup, errorMessage, 'Please enter your ' + field.name, 'error');
+          return false;
+        }
+
+        if (!rule.pattern.test(value)) {
+          setFieldState(formGroup, errorMessage, rule.message, 'error');
+          return false;
+        }
+
+        setFieldState(formGroup, errorMessage, '', 'success');
         return true;
       }
-    }
 
-    // Real-time validation
-    [nameField, emailField, messageField].forEach(field => {
-      field.addEventListener('blur', () => validateField(field));
-      field.addEventListener('input', () => {
-        if (field.closest('.form-group').classList.contains('error')) {
-          validateField(field);
+      function setFieldState(formGroup, errorMessage, message, state) {
+        formGroup.classList.remove('error', 'success');
+        if (state) {
+          formGroup.classList.add(state);
         }
-      });
-    });
-
-    // Form submission
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      
-      // Validate all fields
-      const isNameValid = validateField(nameField);
-      const isEmailValid = validateField(emailField);
-      const isMessageValid = validateField(messageField);
-      
-      if (!isNameValid || !isEmailValid || !isMessageValid) {
-        // Focus first invalid field
-        const firstError = form.querySelector('.form-group.error input, .form-group.error textarea');
-        if (firstError) firstError.focus();
-        return;
+        errorMessage.textContent = message;
       }
 
-      // Show loading state
-      submitButton.classList.add('loading');
-      submitButton.disabled = true;
-
-      try {
-        // Simulate form submission (replace with actual endpoint)
-        await simulateFormSubmission({
-          name: nameField.value,
-          email: emailField.value,
-          message: messageField.value
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        let isValid = true;
+        Object.keys(validationRules).forEach(fieldName => {
+          const field = document.getElementById(fieldName);
+          const formGroup = field.closest('.form-group');
+          const errorMessage = formGroup.querySelector('.error-message');
+          
+          if (!validateField(field, formGroup, errorMessage, validationRules[fieldName])) {
+            isValid = false;
+          }
         });
 
-        // Show success message
-        successMessage.classList.add('show');
-        form.reset();
-        
-        // Reset form states
-        document.querySelectorAll('.form-group').forEach(group => {
-          group.classList.remove('success', 'error');
-        });
-        
-        // Hide success message after 5 seconds
-        setTimeout(() => {
-          successMessage.classList.remove('show');
-        }, 5000);
+        if (!isValid) return;
 
-      } catch (error) {
-        alert('Sorry, there was an error sending your message. Please try again.');
-      } finally {
-        // Remove loading state
-        submitButton.classList.remove('loading');
-        submitButton.disabled = false;
-      }
-    });
+        const submitBtn = form.querySelector('button[type="submit"]');
+        submitBtn.classList.add('loading');
+        submitBtn.disabled = true;
 
-    // Simulate form submission (replace with actual API call)
-    function simulateFormSubmission(data) {
-      return new Promise((resolve) => {
-        console.log('Form submission data:', data);
-        setTimeout(resolve, 1500); // Simulate network delay
-      });
-    }
+        try {
+          await new Promise(resolve => setTimeout(resolve, 1500));
+          
+          successMessage.classList.add('show');
+          form.style.display = 'none';
+          
+          setTimeout(() => {
+            form.reset();
+            form.style.display = 'flex';
+            successMessage.classList.remove('show');
+            
+            document.querySelectorAll('.form-group').forEach(group => {
+              group.classList.remove('error', 'success');
+            });
+          }, 5000);
 
-    // Keyboard navigation enhancement
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' && e.target.tagName !== 'TEXTAREA') {
-        const formElements = Array.from(form.querySelectorAll('input, textarea, button'));
-        const currentIndex = formElements.indexOf(e.target);
-        const nextElement = formElements[currentIndex + 1];
-        
-        if (nextElement && nextElement.tagName !== 'BUTTON') {
-          e.preventDefault();
-          nextElement.focus();
+        } catch (error) {
+          alert('There was an error sending your message. Please try again.');
+        } finally {
+          submitBtn.classList.remove('loading');
+          submitBtn.disabled = false;
         }
-      }
+      });
     });
   </script>
-
-<footer>
-    © 2025 Leslie Mugodi |
-    <a href="https://github.com/GMLesov" target="_blank"> GitHub </a> |
-    <a href="https://linkedin.com/in/leslie-mugodi-miet-6169a862" target="_blank"> LinkedIn </a>
-</footer>
 </body>
 </html>
