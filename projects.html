@@ -11,10 +11,13 @@
   <header>
     <div class="header-content">
       <img src="logo.png" alt="Leslie Mugodi Logo" class="logo" />
+      <div class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">
+        <div></div><div></div><div></div>
+      </div>
       <nav>
         <ul>
           <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
+          <li><a href="projects.html" class="active"><i class="fas fa-code"></i> Projects</a></li>
           <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
       </nav>
@@ -88,13 +91,89 @@
   </main>
 
   <footer>
-    © 2025 Leslie Mugodi |
-    <a href="https://github.com/GMLesov" target="_blank">
-      <i class="fab fa-github"></i> GitHub
-    </a> |
-    <a href="https://linkedin.com/in/leslie-mugodi-miet-6169a862" target="_blank">
-      <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Leslie Mugodi</h3>
+        <p>ICT & Data Analytics Specialist with expertise in network design, cloud integration, and modern analytics solutions.</p>
+        <div class="social-links">
+          <a href="https://github.com/GMLesov" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/leslie-mugodi-miet-6169a862" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:contact@lesliemugodi.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <div class="footer-links">
+          <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          <a href="projects.html"><i class="fas fa-code"></i> Projects</a>
+          <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+          <a href="#" download><i class="fas fa-download"></i> Download CV</a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Expertise</h3>
+        <div class="footer-links">
+          <a href="#"><i class="fas fa-network-wired"></i> Network Design</a>
+          <a href="#"><i class="fas fa-chart-bar"></i> Data Analytics</a>
+          <a href="#"><i class="fas fa-cloud"></i> Cloud Solutions</a>
+          <a href="#"><i class="fas fa-mobile-alt"></i> Mobile Development</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Leslie Mugodi | MIET | All rights reserved</p>
+    </div>
   </footer>
+
+  <script>
+    // Mobile menu functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navUl = document.querySelector('nav ul');
+      
+      if (menuToggle && navUl) {
+        menuToggle.addEventListener('click', function() {
+          navUl.classList.toggle('active');
+          
+          // Animate hamburger menu
+          const bars = menuToggle.querySelectorAll('div');
+          bars[0].style.transform = navUl.classList.contains('active') ? 'rotate(45deg) translate(6px, 6px)' : '';
+          bars[1].style.opacity = navUl.classList.contains('active') ? '0' : '1';
+          bars[2].style.transform = navUl.classList.contains('active') ? 'rotate(-45deg) translate(6px, -6px)' : '';
+        });
+        
+        // Close menu when clicking on nav links
+        navUl.addEventListener('click', function(e) {
+          if (e.target.tagName === 'A') {
+            navUl.classList.remove('active');
+            const bars = menuToggle.querySelectorAll('div');
+            bars[0].style.transform = '';
+            bars[1].style.opacity = '1';
+            bars[2].style.transform = '';
+          }
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+          if (!menuToggle.contains(e.target) && !navUl.contains(e.target)) {
+            navUl.classList.remove('active');
+            const bars = menuToggle.querySelectorAll('div');
+            bars[0].style.transform = '';
+            bars[1].style.opacity = '1';
+            bars[2].style.transform = '';
+          }
+        });
+      }
+    });
+  </script>
 </body>
 </html>
