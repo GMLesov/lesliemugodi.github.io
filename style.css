@@ -388,7 +388,7 @@ main {
   background: linear-gradient(135deg, #ff1493, #e60073);
   color: white;
   text-decoration: none;
-  border-radius: 50px;
+  border-radius: 25px;
   font-weight: 500;
   transition: all 0.3s ease;
   font-size: 0.9rem;
