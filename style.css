@@ -548,7 +548,7 @@ main {
 
 .contact-form input,
 .contact-form textarea {
-  width: calc(100% - 36px);
+  width: 100%;
   padding: 18px;
   font-size: 1.1rem;
   border: 2px solid transparent;
