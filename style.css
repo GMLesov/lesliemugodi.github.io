@@ -4,6 +4,11 @@
   margin: 0;
   padding: 0;
 }
+main { flex: 1; width: 100%; }
+
+html, body {
+  height: 100%;
+}
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,9 +17,9 @@ body {
   color: #fff;
   line-height: 1.6;
   min-height: 100vh;
-  padding-bottom: 2rem;
   flex-direction: column;
   height: 100%;
+ 
 }
 
 /* Header Styles */
