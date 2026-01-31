@@ -8,10 +8,13 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #121212, #1a1a1a, #0f0f0f);
+  display: flex;
   color: #fff;
   line-height: 1.6;
   min-height: 100vh;
   padding-bottom: 2rem;
+  flex-direction: column;
+  height: 100%;
 }
 
 /* Header Styles */
@@ -733,7 +736,7 @@ footer {
   backdrop-filter: blur(10px);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 3rem 2rem 2rem;
-  margin-top: 4rem;
+  margin-top: auto;   /* pushes footer to bottom on short pages */
   color: #ccc;
   position: relative;
   z-index: 1;
