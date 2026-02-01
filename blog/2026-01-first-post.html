@@ -2,22 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>My First Blog Post – Leslie Mugodi</title>
-  <link rel="stylesheet" href="/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First Blog Post | Leslie Mugodi</title>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
+  <!-- Header -->
   <header>
-    <h1>My First Blog Post</h1>
-    <p class="meta">Posted on 01 January 2026</p>
-    <nav><a href="/blog.html">← Back to Blog</a></nav>
+    <div class="header-content">
+      <img src="../logo.png" alt="Leslie Mugodi Logo" class="logo" />
+
+      <div class="menu-toggle">
+        <div></div><div></div><div></div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="../projects.html"><i class="fas fa-code"></i> Projects</a></li>
+          <li><a href="../blog.html" class="active"><i class="fas fa-blog"></i> Blog</a></li>
+          <li><a href="../contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <article>
-    <p>This is the first of many posts where I’ll share insights from the field — from network architecture to analytics solutions I’ve worked on...</p>
-  </article>
+  <!-- Main -->
+  <main>
+    <section class="projects-hero">
+      <h1>📌 My First Blog Post</h1>
+      <p>01 January 2026 · Leslie Mugodi</p>
+    </section>
 
+    <section class="blog-posts">
+      <div class="post-card">
+        <p>
+          Welcome to my blog.
+        </p>
+
+        <p>
+          This space is where I’ll share practical insights and lessons from my work and learning
+          across <strong>data analytics, cloud, networking, and software projects</strong>.
+          I’m building this blog as both a professional record and a learning diary.
+        </p>
+
+        <h3>What you can expect here</h3>
+        <p>
+          I’ll be writing about:
+        </p>
+        <ul style="margin-left: 1.2rem; color:#ccc;">
+          <li>Real-world data analytics projects and dashboards</li>
+          <li>Cloud systems, hosting decisions, and architecture lessons</li>
+          <li>Networking fundamentals and applied infrastructure work</li>
+          <li>Build logs — how projects are designed, broken, fixed, and improved</li>
+        </ul>
+
+        <h3>Why I’m doing this</h3>
+        <p>
+          Documenting work forces clarity. If something takes me hours to learn,
+          I want to write it down so it can save someone else time.
+          This blog is part of my portfolio — but more importantly, it’s part of my growth.
+        </p>
+
+        <h3>What I’m working on now</h3>
+        <p>
+          Some of the projects I’ll be sharing soon include:
+        </p>
+        <ul style="margin-left: 1.2rem; color:#ccc;">
+          <li><strong>ZimDraughts</strong> — a modern draughts platform with AI, timers, and online play</li>
+          <li>Portfolio UI improvements and performance tuning</li>
+          <li>Data analytics case studies using Python and Power BI</li>
+        </ul>
+
+        <p>
+          Thanks for reading — more practical posts coming soon.
+        </p>
+
+        <p style="margin-top: 2rem; font-style: italic;">
+          — Leslie Mugodi
+        </p>
+
+        <div style="margin-top: 2rem;">
+          <a href="../blog.html" class="project-link secondary">
+            ← Back to Blog
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer>
-    <p style="text-align:center;">&copy; 2025 Leslie Mugodi</p>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Leslie Mugodi</h3>
+        <p>ICT & Data Analytics Specialist with expertise in networking, cloud, and analytics.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Leslie Mugodi | MIET | All rights reserved</p>
+    </div>
   </footer>
+
+  <!-- Menu script only -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navUl = document.querySelector('nav ul');
+      if (!menuToggle || !navUl) return;
+
+      menuToggle.addEventListener('click', function () {
+        navUl.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>
