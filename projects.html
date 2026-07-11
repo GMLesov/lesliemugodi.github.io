@@ -3,207 +3,161 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects | Leslie Mugodi</title>
+  <title>Projects | Leslie Mugodi | Telecommunications Engineer</title>
+  <meta name="description" content="Telecommunications engineering projects by Leslie Mugodi, covering GSM/GPS telematics, railway telecoms, RF systems, network monitoring, and analytics." />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <img src="logo.png" alt="Leslie Mugodi Logo" class="logo" />
-      <div class="menu-toggle">
-        <div></div><div></div><div></div>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="projects.html" class="active"><i class="fas fa-code"></i> Projects</a></li>
-          <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
-          <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <canvas id="network-scene" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Leslie Mugodi home">
+      <img src="logo.png" alt="Leslie Mugodi logo" class="logo" />
+      <span>Leslie Mugodi</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
   <main>
-    <section class="projects-hero">
-      <h1>My Projects</h1>
-      <p>Explore my portfolio of innovative solutions in network monitoring, mobile development, and IoT systems.</p>
+    <section class="projects-hero telecom-page-hero">
+      <p class="eyebrow">Engineering Portfolio</p>
+      <h1>Telecoms projects with field reality, network logic, and measurable value.</h1>
+      <p class="lead">A focused selection of work across GPS/GSM telematics, network monitoring, railway telecoms, RF systems, software tools, and analytics-backed operations.</p>
     </section>
 
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Smart Network Monitoring Dashboard</h3>
-        <p>A comprehensive real-time network monitoring solution that provides intelligent insights and automated alerting for enterprise infrastructure management.</p>
+    <section class="project-showcase">
+      <article class="project-card flagship">
+        <div class="project-meta">
+          <span>Telematics | In Development</span>
+          <i class="fas fa-location-crosshairs"></i>
+        </div>
+        <h2>Vehicle Telematics System</h2>
+        <p>In-development IoT vehicle tracking and monitoring concept with GPS/GSM integration, diagnostics, and fleet visibility. It is informed by practical field deployment experience from installing 50+ GPS/GSM tracking units.</p>
         <div class="project-tech">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">Power BI</span>
-          <span class="tech-tag">SQL</span>
-          <span class="tech-tag">REST API</span>
+          <span>In Development</span>
+          <span>GPS</span>
+          <span>GSM</span>
+          <span>IoT</span>
+          <span>Cloud Monitoring</span>
         </div>
-        <div class="project-links">
-          <a href="https://github.com/GMLesov/smart-network-monitoring-dashboard" class="project-link">
-            <i class="fab fa-github"></i> View Code
-          </a>
-          <a href="https://smart-network-dashboard.netlify.app" class="project-link secondary">
-            <i class="fas fa-external-link-alt"></i> Live Demo
-          </a>
+        <div class="impact-list">
+          <div><strong>Status</strong><span>Prototype/concept in progress.</span></div>
+          <div><strong>Target</strong><span>Tracking, diagnostics, and operational awareness.</span></div>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card">
-        <h3>Farm Management App</h3>
-        <p>Android application designed to streamline farm operations with task tracking, crop monitoring, and resource management capabilities for modern agriculture. (Username: admin@farm.com   Password: admin123)</p>
+      <article class="project-card">
+        <div class="project-meta">
+          <span>Network Operations | Demo Available</span>
+          <i class="fas fa-network-wired"></i>
+        </div>
+        <h2>Smart Network Monitoring Dashboard</h2>
+        <p>Real-time monitoring and reporting concept for enterprise infrastructure, combining network status, alerting, and analytics into a decision-friendly dashboard.</p>
         <div class="project-tech">
-          <span class="tech-tag">Android</span>
-          <span class="tech-tag">Java</span>
-          <span class="tech-tag">SQLite</span>
-          <span class="tech-tag">GPS</span>
+          <span>Python</span>
+          <span>Power BI</span>
+          <span>SQL</span>
+          <span>REST API</span>
         </div>
         <div class="project-links">
-          <a href="https://github.com/GMLesov/farm-management-system" class="project-link">
-            <i class="fab fa-github"></i> View Code
-          </a>
-           <a href="https://farm-management-system-4w71.vercel.app" class="project-link secondary">
-            <i class="fas fa-external-link-alt"></i> Demo
-          </a>
+          <a href="https://github.com/GMLesov/smart-network-monitoring-dashboard" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+          <a href="https://smart-network-dashboard.netlify.app" target="_blank" rel="noopener"><i class="fas fa-play"></i> Live Demo</a>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card">
-        <h3>ZimDraughts</h3>
-      
-        <p>
-          A modern online draughts (checkers) platform inspired by Zimbabwean draughts culture.
-          Features a full rules engine with flying kings, forced captures, multi-capture chaining,
-          AI opponent, timers, board flipping, and online multiplayer support.
-        </p>
-      
+      <article class="project-card">
+        <div class="project-meta">
+          <span>Railway Telecoms</span>
+          <i class="fas fa-train-subway"></i>
+        </div>
+        <h2>Railway Signalling & Communications Support</h2>
+        <p>Practical support experience across railway communications environments, including Siemens Hicom 300E, fibre systems, signalling reliability, and maintenance-aware operations.</p>
         <div class="project-tech">
-          <span class="tech-tag">React</span>
-          <span class="tech-tag">JavaScript</span>
-          <span class="tech-tag">Game Engine</span>
-          <span class="tech-tag">AI (Minimax)</span>
-          <span class="tech-tag">Socket.io</span>
-          <span class="tech-tag">WebSockets</span>
-          <span class="tech-tag">Firebase / Supabase</span>
+          <span>Hicom 300E</span>
+          <span>Fibre</span>
+          <span>Signalling</span>
+          <span>Diagnostics</span>
         </div>
-      
-        <div class="project-links">
-          <a href="https://zimdraughts.com" target="_blank" class="project-link">
-            <i class="fas fa-play"></i> Live Demo
-          </a>
-        </div>
-      </div>
+      </article>
 
-      <div class="project-card">
-        <h3>Vehicle Telematics System</h3>
-        <p>IoT-based vehicle tracking and monitoring system with real-time GPS integration, mobile app interface, and comprehensive fleet management dashboard.</p>
+      <article class="project-card">
+        <div class="project-meta">
+          <span>RF Systems</span>
+          <i class="fas fa-tower-broadcast"></i>
+        </div>
+        <h2>Radio, Repeater & Microwave Reliability</h2>
+        <p>Maintenance and support exposure for VHF/UHF radios, repeaters, and microwave communication links used for resilient operational communications.</p>
         <div class="project-tech">
-          <span class="tech-tag">IoT</span>
-          <span class="tech-tag">React Native</span>
-          <span class="tech-tag">Node.js</span>
-          <span class="tech-tag">MongoDB</span>
+          <span>VHF/UHF</span>
+          <span>Repeaters</span>
+          <span>Microwave</span>
+          <span>Field Support</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-meta">
+          <span>Operations App | Demo Available</span>
+          <i class="fas fa-seedling"></i>
+        </div>
+        <h2>Farm Management App</h2>
+        <p>Operational management app with task tracking, crop monitoring, resource management, and GPS-aware functionality. A software project showing practical workflow design.</p>
+        <div class="project-tech">
+          <span>Android</span>
+          <span>Java</span>
+          <span>SQLite</span>
+          <span>GPS</span>
         </div>
         <div class="project-links">
-          <a href="#" class="project-link">
-            <i class="fab fa-github"></i> View Code
-          </a>
-          <a href="#" class="project-link secondary">
-            <i class="fas fa-play"></i> Watch Demo
-          </a>
+          <a href="https://github.com/GMLesov/farm-management-system" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+          <a href="https://farm-management-system-4w71.vercel.app" target="_blank" rel="noopener"><i class="fas fa-play"></i> Live Demo</a>
         </div>
-      </div>
-    </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-meta">
+          <span>Software Engineering | Live</span>
+          <i class="fas fa-chess-board"></i>
+        </div>
+        <h2>ZimDraughts</h2>
+        <p>Online draughts platform with rules engine, flying kings, forced captures, AI opponent, timers, board flipping, and online multiplayer support.</p>
+        <div class="project-tech">
+          <span>React</span>
+          <span>JavaScript</span>
+          <span>AI</span>
+          <span>WebSockets</span>
+        </div>
+        <div class="project-links">
+          <a href="https://zimdraughts.com" target="_blank" rel="noopener"><i class="fas fa-play"></i> Live Demo</a>
+        </div>
+      </article>
+    </section>
   </main>
 
   <footer>
-    <div class="footer-content">
-      <div class="footer-section">
+    <div class="footer-inner">
+      <div>
         <h3>Leslie Mugodi</h3>
-        <p>ICT, Telecoms & Data Analytics Specialist designing reliable systems across networking, cloud platforms, and data-driven solutions.</p>
-        <div class="social-links">
-          <a href="https://github.com/GMLesov" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://linkedin.com/in/leslie-mugodi-miet-6169a862" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="mailto:contact@lesliemugodi.com" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
+        <p>Telecommunications engineer building reliable communication systems and data-backed operations.</p>
       </div>
-      
-      <div class="footer-section">
-        <h3>Quick Links</h3>
-        <div class="footer-links">
-          <a href="index.html"><i class="fas fa-home"></i> Home</a>
-          <a href="projects.html"><i class="fas fa-code"></i> Projects</a>
-          <a href="blog.html"><i class="fas fa-blog"></i> Blog</a>
-          <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
-          <a href="Leslie_Mugodi_CV.pdf" download><i class="fas fa-download"></i> Download CV</a>
-        </div>
-      </div>
-      
-      <div class="footer-section">
-        <h3>Expertise</h3>
-        <div class="footer-links">
-          <a href="#"><i class="fas fa-network-wired"></i> Network & Telecoms Infrastructure</a>
-          <a href="#"><i class="fas fa-chart-bar"></i> Data Analytics & Decision Support</a>
-          <a href="#"><i class="fas fa-cloud"></i> Cloud Platforms & Systems Integration</a>
-          <a href="#"><i class="fas fa-mobile-alt"></i> Software & Web Application Development</a>
-        </div>
+      <div class="footer-links">
+        <a href="https://github.com/GMLesov" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/leslie-mugodi-miet-6169a862" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:contact@lesliemugodi.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
-    
-    <div class="footer-bottom">
-      <p>&copy; 2025 Leslie Mugodi | MIET | All rights reserved</p>
-    </div>
+    <p class="copyright">&copy; 2026 Leslie Mugodi | MIET | All rights reserved</p>
   </footer>
 
-  <script>
-    // Mobile menu functionality
-    document.addEventListener('DOMContentLoaded', function() {
-      const menuToggle = document.querySelector('.menu-toggle');
-      const navUl = document.querySelector('nav ul');
-      
-      if (menuToggle && navUl) {
-        menuToggle.addEventListener('click', function() {
-          navUl.classList.toggle('active');
-          
-          // Animate hamburger menu
-          const bars = menuToggle.querySelectorAll('div');
-          bars[0].style.transform = navUl.classList.contains('active') ? 'rotate(45deg) translate(6px, 6px)' : '';
-          bars[1].style.opacity = navUl.classList.contains('active') ? '0' : '1';
-          bars[2].style.transform = navUl.classList.contains('active') ? 'rotate(-45deg) translate(6px, -6px)' : '';
-        });
-        
-        // Close menu when clicking on nav links
-        navUl.addEventListener('click', function(e) {
-          if (e.target.tagName === 'A') {
-            navUl.classList.remove('active');
-            const bars = menuToggle.querySelectorAll('div');
-            bars[0].style.transform = '';
-            bars[1].style.opacity = '1';
-            bars[2].style.transform = '';
-          }
-        });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', function(e) {
-          if (!menuToggle.contains(e.target) && !navUl.contains(e.target)) {
-            navUl.classList.remove('active');
-            const bars = menuToggle.querySelectorAll('div');
-            bars[0].style.transform = '';
-            bars[1].style.opacity = '1';
-            bars[2].style.transform = '';
-          }
-        });
-      }
-    });
-  </script>
+  <script type="module" src="scene.js"></script>
 </body>
 </html>

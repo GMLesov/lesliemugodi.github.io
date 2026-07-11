@@ -3,289 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Leslie Mugodi</title>
+  <title>Contact | Leslie Mugodi | Telecommunications Engineer</title>
+  <meta name="description" content="Contact Leslie Mugodi for telecommunications engineering, networking, RF, fibre, cloud, and analytics opportunities." />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <img src="logo.png" alt="Leslie Mugodi Logo" class="logo" />
-      <div class="menu-toggle">
-        <div></div><div></div><div></div>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
-          <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
-          <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <canvas id="network-scene" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Leslie Mugodi home">
+      <img src="logo.png" alt="Leslie Mugodi logo" class="logo" />
+      <span>Leslie Mugodi</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
   </header>
 
-  <section class="contact-section">
-    <div class="contact-container">
-      <h1 class="contact-heading">Get In Touch</h1>
-      <form class="contact-form" id="contactForm" action="https://formspree.io/f/mqagazdl" method="POST">
-        <div class="form-group">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" placeholder="Your full name" required>
-          <span class="success-icon"><i class="fas fa-check"></i></span>
-          <div class="error-message">Please enter your full name</div>
+  <main>
+    <section class="contact-page">
+      <div class="contact-copy">
+        <p class="eyebrow">Contact Leslie</p>
+        <h1>Let’s talk telecoms, networks, and reliable operations.</h1>
+        <p class="lead">Reach out for telecommunications engineering roles, collaboration, networking opportunities, or project conversations around RF, fibre, LAN/WAN, telematics, and analytics.</p>
+        <div class="contact-methods">
+          <a href="mailto:contact@lesliemugodi.com"><i class="fas fa-envelope"></i><span>contact@lesliemugodi.com</span></a>
+          <a href="https://linkedin.com/in/leslie-mugodi-miet-6169a862" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i><span>LinkedIn profile</span></a>
+          <a href="https://github.com/GMLesov" target="_blank" rel="noopener"><i class="fab fa-github"></i><span>GitHub projects</span></a>
         </div>
+      </div>
 
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
-          <span class="success-icon"><i class="fas fa-check"></i></span>
-          <div class="error-message">Please enter a valid email address</div>
+      <form class="contact-form-panel" id="contactForm" action="https://formspree.io/f/mqagazdl" method="POST">
+        <div class="form-heading">
+          <span>Secure Message</span>
+          <i class="fas fa-paper-plane"></i>
         </div>
-
-        <div class="form-group">
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
-          <span class="success-icon"><i class="fas fa-check"></i></span>
-          <div class="error-message">Please enter a subject</div>
-        </div>
-
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
-          <span class="success-icon"><i class="fas fa-check"></i></span>
-          <div class="error-message">Please enter your message</div>
-        </div>
-
-        <!-- Hidden fields for Formspree -->
+        <label>
+          Full Name
+          <input type="text" name="name" placeholder="Your full name" required>
+        </label>
+        <label>
+          Email Address
+          <input type="email" name="email" placeholder="your.email@example.com" required>
+        </label>
+        <label>
+          Subject
+          <input type="text" name="subject" placeholder="Telecoms opportunity, project, or question" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" placeholder="Tell me what you would like to discuss..." required></textarea>
+        </label>
         <input type="hidden" name="_subject" value="New Contact Form Submission from Portfolio">
         <input type="hidden" name="_captcha" value="false">
-
-        <button type="submit" aria-label="Send Message">
-          <div class="loading-spinner"></div>
-          <span class="button-text">Send Message</span>
-        </button>
+        <button class="button primary" type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
       </form>
-
-      <div class="success-message" id="successMessage">
-        <h3>Message Sent Successfully!</h3>
-        <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
-    <div class="footer-content">
-      <div class="footer-section">
+    <div class="footer-inner">
+      <div>
         <h3>Leslie Mugodi</h3>
-        <p>ICT, Telecoms & Data Analytics Specialist designing reliable systems across networking, cloud platforms, and data-driven solutions. </p>
-        <div class="social-links">
-          <a href="https://github.com/GMLesov" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://linkedin.com/in/leslie-mugodi-miet-6169a862" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="mailto:contact@lesliemugodi.com" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
+        <p>Telecommunications engineer building reliable communication systems and data-backed operations.</p>
       </div>
-      
-      <div class="footer-section">
-        <h3>Quick Links</h3>
-        <div class="footer-links">
-          <a href="/"><i class="fas fa-home"></i> Home</a>
-          <a href="/projects"><i class="fas fa-code"></i> Projects</a>
-          <a href="/blog.html"><i class="fas fa-blog"></i> Blog</a>
-          <a href="/contact"><i class="fas fa-envelope"></i> Contact</a>
-          <a href="#" download><i class="fas fa-download"></i> Download CV</a>
-        </div>
-      </div>
-      
-      <div class="footer-section">
-        <h3>Expertise</h3>
-        <div class="footer-links">
-          <a href="#"><i class="fas fa-network-wired"></i> Network & Telecoms Infrastructure</a>
-          <a href="#"><i class="fas fa-chart-bar"></i> Data Analytics & Decision Support</a>
-          <a href="#"><i class="fas fa-cloud"></i> Cloud Platforms & Systems Integration</a>
-          <a href="#"><i class="fas fa-mobile-alt"></i> Software & Web Application Development</a>
-        </div>
+      <div class="footer-links">
+        <a href="https://github.com/GMLesov" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/leslie-mugodi-miet-6169a862" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:contact@lesliemugodi.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
-    
-    <div class="footer-bottom">
-      <p>&copy; 2025 Leslie Mugodi | MIET | All rights reserved</p>
-    </div>
+    <p class="copyright">&copy; 2026 Leslie Mugodi | MIET | All rights reserved</p>
   </footer>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Mobile menu functionality
-      const menuToggle = document.querySelector('.menu-toggle');
-      const navUl = document.querySelector('nav ul');
-      
-      if (menuToggle && navUl) {
-        menuToggle.addEventListener('click', function() {
-          navUl.classList.toggle('active');
-          
-          // Animate hamburger menu
-          const bars = menuToggle.querySelectorAll('div');
-          bars[0].style.transform = navUl.classList.contains('active') ? 'rotate(45deg) translate(6px, 6px)' : '';
-          bars[1].style.opacity = navUl.classList.contains('active') ? '0' : '1';
-          bars[2].style.transform = navUl.classList.contains('active') ? 'rotate(-45deg) translate(6px, -6px)' : '';
-        });
-        
-        // Close menu when clicking on nav links
-        navUl.addEventListener('click', function(e) {
-          if (e.target.tagName === 'A') {
-            navUl.classList.remove('active');
-            const bars = menuToggle.querySelectorAll('div');
-            bars[0].style.transform = '';
-            bars[1].style.opacity = '1';
-            bars[2].style.transform = '';
-          }
-        });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', function(e) {
-          if (!menuToggle.contains(e.target) && !navUl.contains(e.target)) {
-            navUl.classList.remove('active');
-            const bars = menuToggle.querySelectorAll('div');
-            bars[0].style.transform = '';
-            bars[1].style.opacity = '1';
-            bars[2].style.transform = '';
-          }
-        });
-      }
-
-      // Form validation and submission
-      const form = document.getElementById('contactForm');
-      const successMessage = document.getElementById('successMessage');
-
-      const validationRules = {
-        name: {
-          pattern: /^[a-zA-Z\s]{2,50}$/,
-          message: 'Please enter a valid name (2-50 characters, letters only)'
-        },
-        email: {
-          pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-          message: 'Please enter a valid email address'
-        },
-        subject: {
-          pattern: /^.{5,100}$/,
-          message: 'Subject must be between 5-100 characters'
-        },
-        message: {
-          pattern: /^.{10,1000}$/,
-          message: 'Message must be between 10-1000 characters'
-        }
-      };
-
-      Object.keys(validationRules).forEach(fieldName => {
-        const field = document.getElementById(fieldName);
-        const formGroup = field.closest('.form-group');
-        const errorMessage = formGroup.querySelector('.error-message');
-
-        field.addEventListener('input', () => {
-          validateField(field, formGroup, errorMessage, validationRules[fieldName]);
-        });
-
-        field.addEventListener('blur', () => {
-          validateField(field, formGroup, errorMessage, validationRules[fieldName]);
-        });
-      });
-
-      function validateField(field, formGroup, errorMessage, rule) {
-        const value = field.value.trim();
-        
-        if (!value) {
-          setFieldState(formGroup, errorMessage, 'Please enter your ' + field.name, 'error');
-          return false;
-        }
-
-        if (!rule.pattern.test(value)) {
-          setFieldState(formGroup, errorMessage, rule.message, 'error');
-          return false;
-        }
-
-        setFieldState(formGroup, errorMessage, '', 'success');
-        return true;
-      }
-
-      function setFieldState(formGroup, errorMessage, message, state) {
-        formGroup.classList.remove('error', 'success');
-        if (state) {
-          formGroup.classList.add(state);
-        }
-        errorMessage.textContent = message;
-      }
-
-      form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        
-        let isValid = true;
-        Object.keys(validationRules).forEach(fieldName => {
-          const field = document.getElementById(fieldName);
-          const formGroup = field.closest('.form-group');
-          const errorMessage = formGroup.querySelector('.error-message');
-          
-          if (!validateField(field, formGroup, errorMessage, validationRules[fieldName])) {
-            isValid = false;
-          }
-        });
-
-        if (!isValid) return;
-
-        const submitBtn = form.querySelector('button[type="submit"]');
-        submitBtn.classList.add('loading');
-        submitBtn.disabled = true;
-
-        try {
-          // Create FormData object
-          const formData = new FormData(form);
-          
-          // Send to Formspree
-          const response = await fetch(form.action, {
-            method: 'POST',
-            body: formData,
-            headers: {
-              'Accept': 'application/json'
-            }
-          });
-
-          if (response.ok) {
-            successMessage.classList.add('show');
-            form.style.display = 'none';
-            
-            setTimeout(() => {
-              form.reset();
-              form.style.display = 'flex';
-              successMessage.classList.remove('show');
-              
-              document.querySelectorAll('.form-group').forEach(group => {
-                group.classList.remove('error', 'success');
-              });
-            }, 5000);
-          } else {
-            const data = await response.json();
-            if (data.errors) {
-              alert('Error: ' + data.errors.map(error => error.message).join(', '));
-            } else {
-              alert('There was an error sending your message. Please try again.');
-            }
-          }
-
-        } catch (error) {
-          console.error('Error:', error);
-          alert('There was an error sending your message. Please try again.');
-        } finally {
-          submitBtn.classList.remove('loading');
-          submitBtn.disabled = false;
-        }
-      });
-    });
-  </script>
+  <script type="module" src="scene.js"></script>
 </body>
 </html>
