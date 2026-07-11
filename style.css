@@ -124,16 +124,6 @@ body::before {
   text-shadow: 0 0 18px rgba(94, 231, 255, 0.14);
 }
 
-.brand span::after {
-  content: "";
-  width: 28px;
-  height: 2px;
-  margin-left: 0.75rem;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--cyan), var(--lime));
-  box-shadow: 0 0 14px rgba(94, 231, 255, 0.32);
-}
-
 .logo {
   width: 56px;
   height: 56px;
@@ -1306,6 +1296,16 @@ footer {
 .contact-form-panel textarea {
   min-height: 150px;
   resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.form-actions .button {
+  flex: 1 1 180px;
 }
 
 .contact-form-panel input:focus,
